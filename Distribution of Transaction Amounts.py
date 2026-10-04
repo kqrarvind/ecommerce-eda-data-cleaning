@@ -1,0 +1,8 @@
+fig, ax = plt.subplots(figsize=(10, 5))
+sns.histplot(df_clean['TotalAmount'], bins=50, kde=True, color='skyblue', ax=ax)
+ax.set_xscale('log')
+ax.set_title('Log-Transformed Distribution of Transaction Total Amount')
+ax.set_xlabel('Total Amount ($ - Log Scale)')
+ax.set_ylabel('Frequency')
+plt.tight_layout()
+plt.show()

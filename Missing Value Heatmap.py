@@ -1,0 +1,5 @@
+plt.figure(figsize=(8, 4))
+sns.heatmap(df.isnull(), cbar=False, cmap='viridis', yticklabels=False)
+plt.title('Raw Data: Missing Value Heatmap')
+plt.xlabel('Columns')
+plt.show()
